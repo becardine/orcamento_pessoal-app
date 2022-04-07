@@ -135,7 +135,7 @@
     <!-- Modal -->
     <div
       class="modal fade"
-      id="erroGravacao"
+      id="registraDespesa"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
@@ -144,8 +144,8 @@
     >
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header text-danger">
-            <h5 class="modal-title" id="staticBackdropLabel">Erro na gravação</h5>
+          <div id="modal_titulo_div">
+            <h5 class="modal-title" id="modal_titulo"></h5>
             <button
               type="button"
               class="btn-close"
@@ -153,44 +153,15 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            Existem campos obrigatórios que não foram preenchidos.
+          <div class="modal-body" id="modal_conteudo">
+            
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Voltar e corrigir</button>
+            <button type="button" id="botao_modal" data-bs-dismiss="modal"></button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="sucessoGravacao"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header text-success">
-            <h5 class="modal-title" id="staticBackdropLabel">Despesa adicionada</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            Despesa adicionada com sucesso.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Voltar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </body>
 </html>
