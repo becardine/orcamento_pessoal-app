@@ -93,6 +93,13 @@ function cadastrarDespesa() {
     //dialog success
     $('#registraDespesa').modal('show')
 
+    ano.value = '',
+    mes.value = '',
+    dia.value = '',
+    tipo.value = '',
+    descricao.value = '',
+    valor.value = ''
+
 
   } else {
     document.getElementById('modal_titulo').innerHTML = 'Erro ao gravar dados'
@@ -103,6 +110,8 @@ function cadastrarDespesa() {
     //dialog error
     $('#registraDespesa').modal('show')
   }
+
+
 }
 
 
